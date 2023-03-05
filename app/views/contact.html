@@ -1,0 +1,160 @@
+{% extends "partition/layout.njk" %} {% block body %}
+<section
+  class="hero-wrap hero-wrap-2"
+  style="background-image: url('images/bg-1.jpg')"
+  data-stellar-background-ratio="0.5"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div
+      class="row no-gutters slider-text js-fullheight align-items-end justify-content-center"
+    >
+      <div class="col-md-9 ftco-animate pb-5 text-center">
+        <h2 class="mb-0 bread">Contact Us</h2>
+        <p class="breadcrumbs">
+          <span class="mr-2"
+            ><a href="index.html"
+              >Home <i class="ion-ios-arrow-round-forward"></i></a
+          ></span>
+          <span>Contact Us <i class="ion-ios-arrow-round-forward"></i></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ftco-section">
+  <div class="row w-100">
+    <div class="col-lg-12 my-4">
+      <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115681.29592731265!2d-77.47713270775661!3d25.0326996781907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x892f7c99b981dbc9%3A0x2aef01d3485e50d2!2sNassau%2C%20Bahamy!5e0!3m2!1spl!2spl!4v1624445118063!5m2!1spl!2spl"
+        class="w-100" height="400" allowfullscreen="" loading="lazy"></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.61706946366!2d72.50484811444181!3d23.001104722903147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b73e4b915af%3A0xb27340a4b28a951f!2sBRIO%20SALON!5e0!3m2!1sen!2sin!4v1677994335191!5m2!1sen!2sin"  class="w-100" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- <div class="col-lg-6 my-4 d-flex align-items-center">
+      <div>
+        <h6>This map is embedded in a 6 column layout</h6>
+        <p>Try to resize your browser window - you will see that it starts to take up 12 columns on
+          screens smaller than 992px.</p>
+        <p>This useful feature helps to make your embedded map responsive (<strong>mobile
+            friendly</strong>). You can customize responsive behavior with the use of <a
+            href="https://mdbootstrap.com/docs/standard/layout/breakpoints/">breakpoints</a>.</p>
+        <p>This text looks so nice because it's <strong>vertically centered</strong> you can achieve
+          this effect using the <a
+            href="https://mdbootstrap.com/docs/standard/layout/vertical-alignment/">vertical
+            alignment</a> layout option.</p>
+      </div>
+    </div> -->
+  </div>
+</section>
+<section class="ftco-section ftco-booking bg-light">
+  <div class="container ftco-relative">
+    <div class="row justify-content-center pb-3">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <span class="subheading">Booking</span>
+        <h2 class="mb-4">Make an Appointment</h2>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia
+        </p>
+      </div>
+    </div>
+    <h3 class="vr">Call Us: 9825899266</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-10 ftco-animate">
+        <form action="/bookAppointmentPost" method="post" class="appointment-form">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="appointment_name"
+                  placeholder="Name"
+                  name="name"
+                />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="appointment_email"
+                  placeholder="Email" name="email"
+                />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control appointment_date"
+                  placeholder="Date"
+                  name="date"
+                />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control appointment_time"
+                  placeholder="Time"
+                  name="time"
+                />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <div class="select-wrap">
+                  <div class="icon">
+                    <span class="ion-ios-arrow-down"></span>
+                  </div>
+                  <select name="serviceType" id="" class="form-control">
+                    <option value="makeup">Professional Makeup</option>
+                    <option value="manicureOrPedicure">Manicure Pedicure</option>
+                    <option value="tattoo">Tattoo</option>
+                    <option value="haircut">Haircut</option>
+                    <option value="hair color">Hair Coloring</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Phone"
+                  name="phone"
+                />
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="7"
+                  class="form-control"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              type="submit"
+              value="Make an Appointment"
+              class="btn btn-primary"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
