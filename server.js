@@ -12,8 +12,8 @@ var transporter = nodemailer.createTransport({
     port: 465,
     secure: true, 
     auth: {
-      user: 'ronalda.barclay@gmail.com',
-      pass: 'hyaxhakpkvcomgos'
+      user: '',
+      pass: ''
     }
   });
   
